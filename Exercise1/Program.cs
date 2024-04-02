@@ -7,17 +7,17 @@ namespace Exercise1
     {
         static void Main( string[] args )
         {
-            Engine eng = new Engine();
-            Console.Out.WriteLine( "State: " + eng.getState() );
-            Console.Out.WriteLine();
+            Engine eng = new();
+            Console.WriteLine( "State: " + eng.GetState() );
+            Console.WriteLine();
 
-            eng.start();
-            Console.Out.WriteLine( "State: " + eng.getState() );
+            eng.Start();
+            Console.WriteLine( "State: " + eng.GetState() );
             Thread.Sleep( 2000 );
-            Console.Out.WriteLine();
+            Console.WriteLine();
 
-            eng.stop();
-            Console.Out.WriteLine( "State: " + eng.getState() );
+            eng.Stop();
+            Console.WriteLine( "State: " + eng.GetState() );
 
             Console.ReadKey();
         }
